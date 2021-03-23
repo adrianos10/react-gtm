@@ -24,6 +24,7 @@ var TagManager = {
     var script = function script() {
       var script = document.createElement('script');
       script.innerHTML = snippets.script;
+      script.defer = true;
       return script;
     };
 
